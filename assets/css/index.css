@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #151c25;
+    margin: 0;
+    padding: 2rem;
+}
+
+.contenedor {
+    background: #7b777a;
+    max-width: 700px;
+    margin: auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 400px rgba(255, 255, 255, 0.21);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    
+}
+
+h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+
+.formulario-evento {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.formulario-evento input {
+    flex: 1;
+    padding: 8px; 
+    margin-right: 8px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario-evento button {
+    padding: 2px 20px;
+    border-radius: 5px;
+    border-color: #554f4f;
+    
+}
+
+.lista-eventos {
+    display: flex;
+    flex-direction: column;
+    gap:  10px;
+}
+
+
+input {
+    width: 35%; 
+    padding: 8px;
+    font-size: 16px;
+}
+
+.producto-item {
+    color: rgb(255, 255, 255);
+    padding: 3px;
+}
+
+.formulario-evento button:hover {
+    background: #39e041bb;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+
+/* Lista de elementos */
+.lista-elementos {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+/* Elementos individuales */
+.elemento-evento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #d1cece;
+    padding: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    margin-bottom: 16px;
+}
+
+.elemento-evento.completado span {
+    text-decoration: line-through;
+    color: rgb(247, 250, 246);
+}
+
+.elemento-evento.completado {
+    background: #628f62;
+}
+
+/* Botones de acciones */
+.acciones button {
+    margin-left: 8px; 
+    padding: 8px; 
+    background: #2720208e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.parrafo-formulario {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-top: 16px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

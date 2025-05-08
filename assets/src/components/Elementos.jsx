@@ -28,9 +28,11 @@ const Elementos = ({ evento, Eliminar, Alternar, Editar }) => {
                 <span>{evento.titulo}</span>
             )}
             <div className="acciones">
-                <button onClick={() => Alternar(evento.id)}>
-                    {evento.completado ? 'Desmarcar' : 'Completar'}
-                </button>
+                {!Editando && (
+                    <button onClick={() => Alternar(evento.id)}>
+                        {evento.completado ? 'Desmarcar' : 'Completar'}
+                    </button>
+                )}
                 <button onClick={manejarEdicion}>
                     {Editando ? 'Guardar' : 'Editar'}
                 </button>

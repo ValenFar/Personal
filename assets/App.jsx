@@ -34,15 +34,25 @@ const App = () => {
 
 
     return (
-        <div className="contenedor">
-            <h1>Administrador de Tareas</h1>
-            <FormularioEvento Agregar={agregarEvento} />
-            <ListaElementos
-                eventos={eventos}
-                completarEvento={completarEvento}
-                editarEvento={editarEvento}
-                eliminarEvento={eliminarEvento}
-            />
+        <div>
+            <header className='beta'>
+                Bienvenido/a a mi Administrador de Tareas! Version Alpha
+            </header>
+            <div className="contenedor">
+                <h1>Administrador de Tareas</h1>
+                <FormularioEvento Agregar={agregarEvento} />
+                <ListaElementos
+                    eventos={eventos}
+                    completarEvento={completarEvento}
+                    editarEvento={editarEvento}
+                    eliminarEvento={eliminarEvento}
+                />
+            </div>
+            <footer>
+                <p className="derechos">
+                    Todos los derechos son mios. 😁
+                </p>
+            </footer>
         </div>
         
     )

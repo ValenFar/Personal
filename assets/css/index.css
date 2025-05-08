@@ -6,12 +6,14 @@ body {
 }
 
 .contenedor {
-    background: #7b777a;
+    background: #7b777ab4;
     max-width: 700px;
     margin: auto;
-    padding: 2rem;
+    padding: 3%;
     border-radius: 10px;
     box-shadow: 0px 0px 400px rgba(255, 255, 255, 0.21);
+    border: 3px solid #124c5ea6;
+    margin-top: 70px;
 }
 
 h1 {
@@ -66,6 +68,7 @@ input {
 }
 
 .formulario-evento button:hover {
+    transition: background 0.3s ease;
     background: #39e041bb;
     border-radius: 5px;
     color: rgb(255, 255, 255);
@@ -111,9 +114,55 @@ input {
     cursor: pointer;
 }
 
+.acciones button:hover {
+    transition: background 0.3s ease;
+    background: #241a1ac5;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+.acciones button:nth-child(3):hover {
+    background-color: #d62828; /* cuando pasas el mouse se pone rojo */
+    transition: background 0.3s ease;
+}
+
+.acciones button:nth-child(1):hover {
+    background-color: #5ca05c; /* cuando pasas el mouse se pone rojo */
+    transition: background 0.3s ease;
+}
+
 .parrafo-formulario {
     color: rgb(255, 255, 255);
     text-align: center;
     margin-top: 16px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #3e3c4133;
+    text-align: center;
+    left: 0px;
+    width: 100%;
+    padding: 3px;
+}
+
+.derechos{
+    color: #f5f5f5;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    background-color: #3e3c4133;
+    text-align: center;
+    left: 0px;
+    width: 100%;
+    padding: 3px;
+    z-index: 1000;
+    padding-top: 10px;
+    color: #fdfdfd;
 }
